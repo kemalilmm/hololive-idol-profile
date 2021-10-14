@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IdolsIntentActivity"
+    android:background="@color/white"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_ios_24"
+            android:background="@color/white"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/back_button" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        >
+        <ImageView
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gremlin_banner"
+            android:contentDescription="@string/banner" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/intent_idols"
+            android:layout_width="100dp"
+            android:layout_height="205dp"
+            android:paddingTop="50dp"
+            android:src="@drawable/amelia_watson" />
+    </FrameLayout>
+
+    <TextView
+
+            android:layout_marginTop="10dp"
+            android:id="@+id/idols_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/demo"
+            android:fontFamily="@font/lato_regular"
+            />
+
+    <TextView
+            android:layout_marginTop="75dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/detail"/>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/personality"
+                    />
+
+                <TextView
+                    android:fontFamily="@font/lato_regular"
+                    android:text="@string/demo"
+                    android:id="@+id/personality"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stream_channel"
+                    />
+                <TextView
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:id="@+id/stream_channel"
+                    android:text="@string/demo"
+                    android:autoLink="web"
+                    />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/subscriber_count"
+                    />
+                <TextView
+                    android:fontFamily="@font/lato_regular"
+                    android:gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:id="@+id/subs_count"
+                    android:text="@string/demo"
+                    />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    />
+
+            </TableRow>
+        </TableLayout>
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/TextTesting"-->
+<!--        />-->
+</LinearLayout>
+
+
+</ScrollView>
